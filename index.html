@@ -16,35 +16,19 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-				<h1 style="color: #0367A6;">Fijacion de Precios</h1>
+				<section id="transitions">
+				<h1><a href="?transition=convex#/transitions" style="text-decoration: none; color: #0367A6;">Fijacion de Precios</a></h1>
 				<img src="./assets/logo-cnsan.png" alt=""
-					style="position: absolute; top: -80%; right: -25%; width: 12rem;">
+					style="position: absolute; top: -80%; right: -15%; width: 10rem;">
 			</section>
 			<section>
 
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+				<section>
 					<h2 style="color: #0367A6;">¿Qué es el precio?</h2>
-					<div style="display: none;">
-						<div data-id="box1"
-							style="background-color: #F23545; color: #fff; padding: 1rem 2rem; border-radius: 1rem;">
-							Costos Fijos
-						</div>
-						<div data-id="box2">
-							+
-						</div>
-						<div data-id="box3" style="position: relative; left: 1000%;">
-							Margen de Ganancia
-						</div>
-
-					</div>
 				</section>
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<h2 style="color: #0367A6; position: absolute; top: -1000%; width: 100%; text-align: center;">¿Qué
-						es el precio?
-					</h2>
-					<div style="display: flex; flex-direction: column; align-items: center;">
-						<div data-id="box1"
+				<section>
+					<div style="display: flex; justify-content: space-around; align-items: center;">
+						<div
 							style="background-color: #F23545; color: #fff; padding: 1rem 2rem; border-radius: 1rem;">
 							Costos Fijos
 						</div>
@@ -77,7 +61,7 @@
 					<div style="display: flex; justify-content: center; gap: 2rem;">
 						<p style="background-color: #0367A6; color: #fff; padding: 1rem 2rem; border-radius: 1rem;">
 							Precio</p>
-						<p style="padding: 1rem 0; ">+</p>
+						<p style="padding: 1rem 0; ">X</p>
 						<p style="background-color: #0367A6; color: #fff; padding: 1rem 2rem; border-radius: 1rem;">
 							Cantidad</p>
 					</div>
@@ -134,22 +118,40 @@
 				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 					<h3>Costos</h3>
 					<div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 3rem;">
-						<div data-id="Fijos" class="fragment fade-right"
-							style="grid-column: 1/2; grid-row: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
+						<div data-id="Fijos" class="fragment"
+							style="grid-column: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
 							Fijos
 						</div>
-						<div class="fragment fade-left"
-							style="grid-column: 2/3; grid-row: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
+						<div data-id="Variables" class="fragment"
+							style="grid-column: 2/3; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
 							Variables
 						</div>
-						<div class="fragment fade-up"
-							style="grid-column: 1/2; grid-row: 2/3; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
-							Total
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h3>Costos</h3>
+					<div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 3rem;">
+						<div data-id="Fijos"
+							style="grid-column: 1/3; grid-row: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
+							Fijos
 						</div>
-						<div data-id="" class="fragment fade-up"
-							style="grid-column: 2/3; grid-row: 2/3; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
-							Unitarios
+						<div data-id="Variables"
+							style="grid-column: 1/3; grid-row: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
+							Totales
 						</div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h3>Costos</h3>
+					<div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 3rem;">
+						<div data-id="Variables"
+						style="grid-column: 1/2; grid-row: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
+						Totales
+					</div>
+					<div data-id="Fijos" class="fragment"
+						style="grid-column: 2/3; grid-row: 1/2; background-color: #0583F2; padding: 2rem 1rem; border-radius: 1rem; color: #fff; font-weight: bold;">
+						Unitarios
+					</div>
 					</div>
 				</section>
 			</section>
@@ -179,11 +181,11 @@
 					<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
 						<div class="fragment fade-right" style="grid-column: 1/2;">
 							<img src="./assets/Gastos operacionales.gif" alt="" style="width: 10rem; height: 10rem;">
-							<p>Costos Operacionales</p>
+							<p>Gastos Operacionales</p>
 						</div>
 						<div class="fragment fade-left" style="grid-column: 2/3;">
 							<img src="./assets/Gastos No Operacionales.svg" alt="" style="width: 10rem; height: 10rem;">
-							<p>Costos No Operacionales</p>
+							<p>Gastos No Operacionales</p>
 						</div>
 					</div>
 				</section>
